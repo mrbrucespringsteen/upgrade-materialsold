@@ -100,7 +100,6 @@ const amuletChecker = (str) => {
 
 
  for (let i = 0; i < splitAm.length; i++) {
-  //  console.log(splitAm[i])
 
   let firstIdx = splitAm[i]
   let secIdx = splitAm[i + 1]
@@ -175,11 +174,7 @@ const amuletChecker = (str) => {
     } else {
         return false
     }
-    //       if (numChecker === 10) {
-    //     return 10
-    // } else 
   } else {
-    // console.log("doesn't fit pattern rules", str)
     return false
   }
     
