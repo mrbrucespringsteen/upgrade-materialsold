@@ -1,1 +1,1 @@
-module.exports = ["Amulet"]
+module.exports = ["Amulet"];

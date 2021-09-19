@@ -179,8 +179,8 @@ const amuletChecker = (str) => {
     //     return 10
     // } else 
   } else {
-    // console.log("doesn't fit pattern rules")
-    return str
+    // console.log("doesn't fit pattern rules", str)
+    return false
   }
     
 
@@ -194,7 +194,7 @@ const checkNums = (checkMod) => {
         let getNumber = checkMod[1].split(" ")[1]
         // console.log("NUMBER", getNumber)
         if (getNumber === undefined) {
-            // console.log("no number")
+            console.log("no number")
             return false
         } else if (getNumber > 88) {
             // console.log("number is good")
