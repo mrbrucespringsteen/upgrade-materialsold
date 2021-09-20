@@ -26,9 +26,9 @@ const Header = () => {
           <div>
             <a href="/scratchpad" className={currentPage === 'scratchpad' ? 'active' : 'nav-item'}>scratchpad</a>
           </div>
-          <div>
+          {/* <div>
             <a href="/collection" className={currentPage === 'collection' ? 'active' : 'nav-item'}>collection</a>
-          </div>
+          </div> */}
           <div>
             <a href="/material-list" className={currentPage === 'material-list' ? 'active' : 'nav-item'}>material list</a>
           </div>
