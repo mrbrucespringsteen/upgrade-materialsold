@@ -21,8 +21,8 @@ export default function AmuletCreator(props) {
                 />
             </div>
             <div>
-                <span id={step === 0 ? 'active' : 'inactive'} style={{"float": "left"}}>Find an Amulet</span>
-                <span id={step === 1 ? 'active' : 'inactive'} style={{"marginLeft": "30%"}}>Mint your Amulet</span>
+                <span id={step === 0 ? 'active' : 'inactive'} style={{"float": "left"}}>Find an Upgrade Material</span>
+                <span id={step === 1 ? 'active' : 'inactive'} style={{"marginLeft": "22%"}}>Mint your Amulet</span>
                 <span id={step === 2 ? 'active' : 'inactive'} style={{"float": "right"}}>Reveal your Amulet</span>
             </div>
             {step === 0 && <AmuletFinder onFind={(amulet) => { setAmulet(amulet); setStep(1) }} />}

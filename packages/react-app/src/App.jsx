@@ -213,7 +213,7 @@ function App(props) {
                 provider={userProvider}
               />
             </Route>
-            <Route path="/collection" component={Collection} />
+            {/* <Route path="/collection" component={Collection} /> */}
             <Route path="/faq" component={Faq} />
           <Route path="/">
             {/* //! Homepage rendering */}
