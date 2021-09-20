@@ -228,6 +228,7 @@ const checkForSpaces = (str) => {
         // console.log(str, "need space before number (false)")
         return false
       } else {
+        //   return str
           return true
       }
     }
@@ -254,7 +255,6 @@ function scoreAmulet(text) {
             current = 0;
         }
     }
-    
     return longest
 }
 
@@ -298,12 +298,11 @@ export default function AmuletFinder(props) {
     // let checker = text.length > 0 ? checkForSpaces(text) : null
         // console.log("!!!!", checker);
     const score = scoreAmulet(text);
-
     const splitText = text.split(", ")[1]
 
     // const id = ethers.utils.keccak256(Buffer.from(text));
     const id = ethers.utils.sha256(Buffer.from(text))
-   
+
     const rarity = countUtf8Bytes(text) > 64 ? "Too Long" : (RARITIES[score] || 'Beyond Mythic');
 
     return (
